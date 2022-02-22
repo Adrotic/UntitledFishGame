@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public GameObject bullet;
     public float speed;
     // Start is called before the first frame update
     void Start()
@@ -26,7 +27,7 @@ public class Player : MonoBehaviour
     }
     void Shoot()
     {
-        this.gameObject.GetComponent<SpawnProjectile>().Spawn();
+        gameObject.GetComponent<SpawnProjectile>().Spawn(bullet,transform.position,10,10);
     }
     void MovePlayer() {
         Vector3 transform = new Vector3(0, 0, 0);

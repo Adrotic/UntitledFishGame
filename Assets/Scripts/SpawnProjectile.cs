@@ -6,7 +6,7 @@ public class SpawnProjectile : MonoBehaviour
 {
     float startSpeed;
     float endSpeed;
-    public GameObject projectileBase;
+    //public GameObject projectileBase;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,9 +18,10 @@ public class SpawnProjectile : MonoBehaviour
     {
         
     }
-    public void Spawn()
+    public void Spawn(GameObject g,Vector3 pos,float velocity,float acceleration)
     {
-        GameObject projectile = Instantiate(projectileBase, transform.position, transform.rotation);
-        projectile.GetComponent<Rigidbody2D>().AddRelativeForce(new Vector2(600, 0));
+        GameObject projectile = Instantiate(g, pos, transform.rotation);
+        projectile.GetComponent<Rigidbody2D>().AddRelativeForce(new Vector2(velocity, 0));
+        projectile.GetComponent<Projectile>().acceleration = acceleration;
     }
 }

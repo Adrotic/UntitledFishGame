@@ -301,6 +301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 218c0eef071dce44481282b50802b355, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 8314540531939216887, guid: d4937b63319582a408ebfd577ab65d8b, type: 3}
   speed: 0.01
 --- !u!114 &1517749792
 MonoBehaviour:
@@ -314,7 +315,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56eb1d2a7974f9342a58dfab12d6bedb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileBase: {fileID: 8314540531939216887, guid: d4937b63319582a408ebfd577ab65d8b, type: 3}
 --- !u!1001 &1368378866084304485
 PrefabInstance:
   m_ObjectHideFlags: 0
