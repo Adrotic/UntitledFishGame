@@ -18,10 +18,8 @@ public class SpawnProjectile : MonoBehaviour
     {
         
     }
-    public void Spawn(GameObject g,Vector3 pos,float velocity,float acceleration)
-    {
+
+    public void Spawn(GameObject g, Vector3 pos) {
         GameObject projectile = Instantiate(g, pos, transform.rotation);
-        projectile.GetComponent<Rigidbody2D>().AddRelativeForce(new Vector2(velocity, 0));
-        projectile.GetComponent<Projectile>().acceleration = acceleration;
     }
 }

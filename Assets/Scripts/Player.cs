@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
     }
     void Shoot()
     {
-        gameObject.GetComponent<SpawnProjectile>().Spawn(bullet,transform.position,10,10);
+        gameObject.GetComponent<SpawnProjectile>().Spawn(bullet,transform.position);
     }
     void MovePlayer() {
         Vector3 transform = new Vector3(0, 0, 0);
